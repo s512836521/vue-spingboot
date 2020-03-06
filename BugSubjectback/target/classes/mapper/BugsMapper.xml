@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace= "com.yonyou.dao.mapper.BugsMapper" >
+
+    <resultMap id ="BugsInfoMap" type="com.yonyou.dao.entity.Bugs">
+        <result column="bug_id" property="bugid"/>
+        <result column="bug_area" property="areaCode"/>
+        <result column="bug_name" property="areaName"/>
+        <result column="bug_syst" property="sysCode"/>
+        <result column="pop_sysname" property="sysName"/>
+        <result column="bug_poplv" property="poplv"/>
+        <result column="bug_popm" property="popmessage"/>
+        <result column="bug_popr" property="popreceiverCode"/>
+        <result column="receiver_name" property="popreceiverName"/>
+        <result column="bug_popflag" property="popflag"/>
+    </resultMap>
+
+    <insert id = "insertBugs" parameterType="java.util.Map">
+            INSERT INTO  bug_pop(
+                 bug_area,bug_syst,bug_poplv,bug_popm,bug_popr,bug_popsub,bug_popsubtel,bug_subdate,bug_createdate
+            )VALUES (
+                #{area},
+                #{systematic},
+                #{poplv},
+                #{popmessage},
+                #{popreceiver},
+                #{submitpop},
+                #{submitpoptel},
+                #{createdate},
+                #{subdate}
+            )
+    </insert>
+
+    <select id = "queryAllBugs" resultMap="BugsInfoMap">
+        select a.bug_id,
+            a.bug_area,
+            b.bug_name,
+            a.bug_syst,
+            c.pop_sysname,
+            a.bug_poplv,
+            a.bug_popm,
+            a.bug_popr,
+            d.receiver_name,
+            a.bug_popflag
+        from bug_pop a left join bug_text b on a.bug_area = b.bug_code
+                       left join bug_system c on a.bug_syst = c.pop_sysid
+                       left join bug_receiver d on a.bug_popr = d.receiver_code
+    </select>
+</mapper>
