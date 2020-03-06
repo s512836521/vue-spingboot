@@ -1,0 +1,20 @@
+{
+    "body":{
+        "errorCode":"0",
+        "errorMsg":"",
+        "issueAreaInfoList":[{"areaCode":"110","areaName":"七星关区财政局"},
+                        {"areaCode":"119","areaName":"万山区财政局"}],
+
+        "issueSystematicInfoList":[{"systematicCode":"001","systematicName":"支付系统"},
+                        {"systematicCode":"002","systematicName":"指标系统"},
+                        {"systematicCode":"003","systematicName":"工资系统"}],
+
+        "issuePoplvInfoList":[{"poplvCode":"01","poplvName":"A"},
+                        {"poplvCode":"02","poplvName":"B"},
+                        {"poplvCode":"03","poplvName":"C"},
+                        {"poplvCode":"04","poplvName":"D"}],
+
+        "issuePopreceiverInfoList":[{"popreceiverCode":"01","popreceiverName":"李权"},
+                        {"popreceiverCode":"02","popreceiverName":"雍清正"}]
+    }
+}
