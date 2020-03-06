@@ -1,0 +1,104 @@
+/* Designer:zhixin.chen Date:2018.03.01 */
+@charset "utf-8";
+/* common 公共*/
+*{padding:0; margin:0; font-family:"微软雅黑",Arial;}
+a{text-decoration:none;}
+ul,li{list-style:none;}
+.input01{border:1px solid #cccccc; height:30px; line-height:30px; padding:0 8px; margin-right:20px; width:300px; box-sizing:border-box;}
+.input02{border:1px solid #cccccc; height:30px; line-height:30px; padding:0 8px; margin-right:20px; width:150px; box-sizing:border-box;}
+.flexbox{display:flex;}
+
+/* main */
+.main{width:960px; margin:0 auto;}
+.kbox{height:100px; line-height:100px; position:relative;}
+.dtitle{font-size:20px; font-weight:bold; color:#333333;}
+.a_blue{ font-size:14px; font-weight:normal; color:#319df5; border:1px solid #319df5; border-radius:4px; padding:0 4px;}
+a.afont_blue,a.afont_blue:hover{color:#319df5; text-decoration: none;}
+/* setpbox 步骤层 */
+.setpbox{ position:absolute; right:0; top:30px; line-height:30px; width:300px; font-size:14px;}
+.setpbox li{ float:left; width:30%; text-align:center; position:relative;}
+.setpbox li i{ width:32px; height:32px; line-height:32px; display:block; text-align:center; font-style:normal; background:#cccccc; border:4px solid #fff; border-radius:50%; color:#fff;margin: 0 auto; z-index:2; position: relative;}
+.setpbox li.sel .line{position:absolute; top:24%; left:50%; width:100%; height:4px; background:#c4162f; display:block; border-radius:0;}
+.setpbox li .line{position:absolute; top:24%; left:50%; width:100%; height:4px; background:#cccccc; display:block; border-radius:0;}
+.setpbox li.sel i{background:#c4162f;}
+.setpbox li.sel p{color:#c4162f;}
+.setpbox li p{text-align:center; color:#666666; font-size:12px;}
+
+.itembox{}
+.itembox .item_tit{ font-size:18px; color:#333333; border-bottom:1px solid #ccc; position:relative; height:30px;}
+.itembox h3{background:#fff; position:absolute; bottom:-2px;}
+.big_tit{font-size:18px; font-weight:normal;}
+.small_tit{font-size:12px;font-weight:normal;}
+.itembox .item_con{ padding-top:20px;}
+.card_info p{line-height:50px; font-size:14px;}
+.card_info:after{clear:both; content:""; display:block; overflow:hidden;}
+.card_info_left{float:left; width:520px;}
+.card_info_left p{line-height:50px; font-size:14px;}
+.card_info_right{float:right; width:430px; overflow: hidden}
+.item_con .name{width:120px; display:inline-block;}
+.div_tips{color:#c4162f; font-size:12px; margin-bottom:10px;}
+.i_nomal{border:1px solid #cccccc; border-radius:4px; color:#cccccc; display:inline-block; height:30px; line-height:30px; padding:0 15px; text-align:center; margin-right:20px;}
+.i_sel{border:1px solid #b90e1e; border-radius:4px; color:#b90e1e; background:#f6f8fa; display:inline-block; height:30px; line-height:30px; padding:0 15px; text-align:center;}
+.a_code{border:1px solid #b90e1e; border-radius:4px; color:#b90e1e; background:#fff; display:inline-block; height:30px; line-height:30px; padding:0 15px; text-align:center;}
+
+.c_red{color:#c4162f; font-style:normal;}
+/* header */
+
+.header{background:url(../../../images/creditCardPC/images/topbg.jpg) repeat-x; height:124px;}
+.logo{width:960px; margin:0 auto; padding-top:36px;}
+
+.footer{ background:#666666;}
+.footer_nav{background:#dddddd; height:50px; line-height:50px; color:#333333; font-size:14px; text-align:center;}
+.footer_copyright{background:#666666; color:#eeeeee; width:960px; margin:0 auto; padding:20px 0;}
+.footer_copyright:after{clear:both; content:""; display:block; overflow:hidden;}
+.flbox{float:left; width:500px;}
+.flbox p{line-height:50px;}
+.frbox{float:right; width:400px;}
+.ewmbox:after{clear:both; content:""; display:block; overflow:hidden;}
+.ewmbox li{width:90px; float:right; margin-left:20px; text-align:center;}
+
+/* icon 图标 */
+.i_tel{background:url(../../../images/creditCardPC/images/icon_tel.png) center center no-repeat; height:16px; width:16px; display:inline-block; background-size:contain; vertical-align:middle;}
+.i_tel2{background:url(../../../images/creditCardPC/images/icon_user.png) center center no-repeat; height:16px; width:16px; display:inline-block; background-size:contain; vertical-align:middle;}
+.i_icp{background:url(../../../images/creditCardPC/images/icon_icp.png) center center no-repeat; height:16px; width:16px; display:inline-block; background-size:contain; vertical-align:middle;}
+
+/* btn 按钮*/
+.btnbox{text-align:center; margin:30px 0;}
+.btn01{background:#c4162f; color:#fff; text-align:center; font-size:16px; width:200px; line-height:46px; border:none; border-radius:4px; cursor:pointer;}
+.btn02{background:none; color:#666666; text-align:center; font-size:16px; width:200px; line-height:46px; border:none; border-radius:4px; cursor:pointer; text-decoration:underline;}
+
+.tips{line-height:30px; color:#666666; padding-bottom:20px;}
+.tips h3{line-height:30px; font-size:14px;}
+
+/*selbox*/
+.selbox{border:1px solid #ccc; height:30px; line-height:30px; width:144px; margin-right:10px; color:#777777; -webkit-appearance:none; -moz-appearance:none; background:url(../../../images/creditCardPC/images/icon_xl.png) no-repeat 120px center; padding-left:10px; }
+
+/* 结果页 */
+.infobox{width:580px; margin:0 auto; padding:90px 0;}
+.infobox img{ float:left; margin-right:30px;}
+.infobox h3{color:#319df5; font-size:20px; font-weight:normal; text-align:left; margin-bottom:20px;}
+.infobox p{ color:#666666; font-size:14px;}
+
+/* list */
+.list{border:1px solid #eeeeee; margin-top:-1px;}
+.list .list_tit{background:#f9f9f9; line-height:60px; border-bottom:1px solid #eee; padding-left:24px; font-size:18px; position:relative;}
+.list .list_tit .sfont{font-size:14px; color:#666666;}
+.list .list_tit .bfont{font-size:18px; font-weight:bold; color:#333333;}
+.list .list_con{padding:20px 30px;}
+.list .list_con p{ line-height:36px;}
+.titname{width:126px; display:inline-block;}
+.list .list_con p label{margin-right:20px; }
+.a_show{width:18px; height:18px; display:block; position:absolute; right:20px; top:22px; background:url(../../../images/creditCardPC/images/icon_show.png) no-repeat; background-size:contain;}
+
+/* pro_txt1 */
+.pro_tit{line-height:55px; border-bottom:1px solid #ccc;}
+.pro_tit h3{border-bottom:4px solid #319df5; display:inline-block; padding:0 18px;}
+.pro_con{padding:20px 0;}
+.proli:after{clear:both; content:""; display:block; overflow:hidden;}
+.proli li{width:448px; float:left; margin-bottom:20px; margin-right:30px;}
+.pro_img{float:left; width:110px; margin-right:28px;}
+.pro_txt1{color:#222; font-size:16px; font-weight:normal;}
+.pro_txt2{color:#8f8f8f; font-size:14px; line-height:24px; min-height:48px; padding:10px 0;}
+.pro_txt3{color:#e53935; font-size:18px;}
+
+.headerbox{width:960px; margin:0 auto; position:relative;}

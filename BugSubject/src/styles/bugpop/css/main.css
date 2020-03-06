@@ -1,0 +1,29 @@
+/* Designer:zhixin.chen Date:2018.03.01 */
+@charset "utf-8";
+/* common 公共*/
+*{padding:0; margin:0; font-family:"微软雅黑",Arial;}
+a{text-decoration:none;}
+ul,li{list-style:none;}
+
+.flexbox{display:flex;}
+
+/* main */
+.main{width:960px; margin:0 auto;}
+.kbox{height:100px; line-height:100px; position:relative;}
+
+.card_info{font-size:14px; min-height:100px;}
+
+.c_red{color:#c4162f; font-style:normal;}
+/* header */
+
+/* btn 按钮*/
+.btnbox{text-align:center; margin:30px 0;}
+.btn01{background:#c4162f; color:#fff; text-align:center; font-size:16px; width:200px; line-height:46px; border:none; border-radius:4px; cursor:pointer;}
+.btn02{background:none; color:#666666; text-align:center; font-size:16px; width:200px; line-height:46px; border:none; border-radius:4px; cursor:pointer; text-decoration:underline;}
+
+
+/*selbox*/
+.selbox{ height:10px; line-height:10px; width:200px; margin-right:10px; color:#777777; -webkit-appearance:none; padding-left:10px; }
+
+
+

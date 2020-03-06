@@ -1,0 +1,15 @@
+
+@charset "utf-8";
+
+/* ztbox */
+#ztbox{width:1970px;height:220px;margin:0 auto;}
+
+#ztbox #conter{width:420px;height:240px;float:left;display:inline;overflow:hidden;position:relative;margin:0px 10px;}
+#ztbox #conter ul{width:auto;height:204px;top:0px;left:0px;position:absolute;overflow:hidden;}
+#ztbox #conter li{width:207px;height:174px;float:left;position:relative; text-align:center;}
+/* #ztbox #conter li.sel{background:url(../../../images/creditCardPC/images/selbg.png) no-repeat; background-size:contain;} */
+#ztbox #conter li img{width:172px; padding-top:18px;}
+#ztbox #conter li p{line-height:24px;}
+#ztbox #scroll{width:420px;height:6px;left:0px;bottom:8px;cursor:pointer;position:absolute;background: #ccc repeat-x left center;}
+#ztbox #scroll span{width:100px;height:20px;line-height:20px;left:0px;bottom:-5px;cursor:pointer;position:absolute;background:#1abc9c; color:#fff; font-size:12px; padding:0 4px;}
+
